@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X, ChevronDown, Phone } from 'lucide-react'
 
 const navLinks = [
@@ -61,13 +62,15 @@ export default function Navbar() {
       {/* Main nav */}
       <nav className="flex items-center justify-between px-6 md:px-8 py-4">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-none">
-          <span className={`font-serif text-2xl font-semibold tracking-wide transition-colors duration-300 ${scrolled ? 'text-foreground' : 'text-white'}`}>
-            TripOcio
-          </span>
-          <span className={`text-[10px] font-sans uppercase tracking-[0.2em] transition-colors duration-300 ${scrolled ? 'text-terracotta' : 'text-white/70'}`}>
-            Craft Your Journey
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/tripocio-logo.png"
+            alt="TripOcio — Where Leisure Meets Luxury"
+            width={180}
+            height={72}
+            className={`h-14 w-auto object-contain transition-all duration-300 ${scrolled ? '' : 'brightness-0 invert'}`}
+            priority
+          />
         </Link>
 
         {/* Desktop links */}
