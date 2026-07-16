@@ -45,7 +45,7 @@ export default function Navbar() {
       {/* Top bar */}
       <div className={`hidden md:flex items-center justify-between px-8 py-2 text-xs border-b transition-all duration-300 ${scrolled ? 'border-border' : 'border-white/20'}`}>
         <span className={`transition-colors duration-300 ${scrolled ? 'text-muted-foreground' : 'text-white/80'}`}>
-          Indore&apos;s Most Trusted Travel Agency Since 2009
+          Indore&apos;s Most Trusted Travel Agency Since 2019
         </span>
         <div className={`flex items-center gap-4 ${scrolled ? 'text-muted-foreground' : 'text-white/80'}`}>
           <a href="tel:+917312345678" className="flex items-center gap-1 hover:text-terracotta transition-colors">
@@ -62,13 +62,18 @@ export default function Navbar() {
       {/* Main nav */}
       <nav className="flex items-center justify-between px-6 md:px-8 py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link
+          href="/"
+          className={`flex items-center rounded-xl transition-all duration-300 ${
+            scrolled ? 'bg-transparent p-0' : 'bg-white/20 backdrop-blur-sm px-3 py-1.5'
+          }`}
+        >
           <Image
             src="/images/tripocio-logo.png"
             alt="TripOcio — Where Leisure Meets Luxury"
-            width={180}
-            height={72}
-            className={`h-14 w-auto object-contain transition-all duration-300 ${scrolled ? '' : 'brightness-0 invert'}`}
+            width={160}
+            height={64}
+            className="h-12 w-auto object-contain"
             priority
           />
         </Link>
