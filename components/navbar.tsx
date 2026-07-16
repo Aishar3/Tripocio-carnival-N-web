@@ -62,18 +62,13 @@ export default function Navbar() {
       {/* Main nav */}
       <nav className="flex items-center justify-between px-6 md:px-8 py-4">
         {/* Logo */}
-        <Link
-          href="/"
-          className={`flex items-center rounded-xl transition-all duration-300 ${
-            scrolled ? 'bg-transparent p-0' : 'bg-white/20 backdrop-blur-sm px-3 py-1.5'
-          }`}
-        >
+        <Link href="/" className="flex items-center">
           <Image
             src="/images/tripocio-logo.png"
             alt="TripOcio — Where Leisure Meets Luxury"
             width={160}
             height={64}
-            className="h-12 w-auto object-contain"
+            className="h-12 w-auto object-contain [mix-blend-mode:multiply]"
             priority
           />
         </Link>

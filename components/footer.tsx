@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Share2, Camera, Play } from 'lucide-react'
 
 const quickLinks = [
@@ -26,12 +27,17 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Brand */}
         <div className="lg:col-span-1">
-          <div className="mb-4">
-            <span className="font-serif text-3xl font-semibold text-white">TripOcio</span>
-            <p className="text-xs uppercase tracking-[0.2em] text-white/50 mt-0.5">Craft Your Journey</p>
+          <div className="mb-5">
+            <Image
+              src="/images/tripocio-logo.png"
+              alt="TripOcio — Where Leisure Meets Luxury"
+              width={160}
+              height={64}
+              className="h-14 w-auto object-contain [mix-blend-mode:screen]"
+            />
           </div>
           <p className="text-sm text-white/70 leading-relaxed mb-6">
-            Indore&apos;s most trusted travel agency since 2009. We craft unforgettable journeys — from Himalayan pilgrimages to Dubai skylines and beyond.
+            Indore&apos;s most trusted travel agency since 2019. We craft unforgettable journeys — from Himalayan pilgrimages to Dubai skylines and beyond.
           </p>
           <div className="flex items-center gap-3">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
