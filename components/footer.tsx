@@ -33,7 +33,7 @@ export default function Footer() {
               alt="TripOcio — Where Leisure Meets Luxury"
               width={160}
               height={64}
-              className="h-14 w-auto object-contain [mix-blend-mode:screen]"
+              className="h-14 w-auto object-contain"
             />
           </div>
           <p className="text-sm text-white/70 leading-relaxed mb-6">

@@ -68,7 +68,7 @@ export default function Navbar() {
             alt="TripOcio — Where Leisure Meets Luxury"
             width={160}
             height={64}
-            className="h-12 w-auto object-contain [mix-blend-mode:multiply]"
+            className="h-12 w-auto object-contain"
             priority
           />
         </Link>
