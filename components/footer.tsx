@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react'
+import { Phone, Mail, MapPin, Share2, Camera, Play } from 'lucide-react'
 
 const quickLinks = [
   { label: 'All Packages', href: '/tours' },
@@ -36,15 +36,15 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
               className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
-              <Facebook size={14} />
+              <Share2 size={14} />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
               className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
-              <Instagram size={14} />
+              <Camera size={14} />
             </a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube"
               className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition-colors">
-              <Youtube size={14} />
+              <Play size={14} />
             </a>
           </div>
         </div>
