@@ -1,16 +1,23 @@
-export default function Home() {
+import HeroSection from '@/components/home/hero-section'
+import StatsBar from '@/components/home/stats-bar'
+import FeaturedTours from '@/components/home/featured-tours'
+import DestinationCategories from '@/components/home/destination-categories'
+import WhyTripocio from '@/components/home/why-tripocio'
+import Testimonials from '@/components/home/testimonials'
+import SubBrands from '@/components/home/sub-brands'
+import HomeCTA from '@/components/home/home-cta'
+
+export default function HomePage() {
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans">
-      <main className="flex w-full max-w-3xl flex-col items-center gap-8 px-6 py-16 text-center sm:items-start sm:text-left">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold tracking-tight">
-            Tripocio carnival new - website
-          </h1>
-          <p className="max-w-md text-lg text-muted-foreground">
-            To get started, send a prompt or modify this page directly.
-          </p>
-        </div>
-      </main>
-    </div>
-  );
+    <>
+      <HeroSection />
+      <StatsBar />
+      <FeaturedTours />
+      <DestinationCategories />
+      <WhyTripocio />
+      <Testimonials />
+      <SubBrands />
+      <HomeCTA />
+    </>
+  )
 }
